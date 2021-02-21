@@ -69,17 +69,18 @@ for passwordType in passwords:
 #      was not. An example of calling the function is
 #      result = openZip(filename, password)
 
+filename = True 
+result = openZip(filename, passwordType)
 
-
-result = openZip(file, passwordType)
 
 #      Step 5: For each iteraton of the loop, let the user know
 #      what the result of the crack attempt was (True = success,
 #      False = failure) and what password was tried
 
 for passwordType in passwords:
+    
     if passwordType != "":
         print('...failed')
-else:
-    print('...Success!!!')
+    else:
+        print('...Success!!!')
     
